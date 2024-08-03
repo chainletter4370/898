@@ -36,7 +36,7 @@
         p {
             white-space: pre-wrap;
             margin: 0 0 20px 0;
-            line-height: 1; /* 줄 간격 조절 */
+            line-height: 1.5; /* 줄 간격 조절 */
         }
         .quote, .about, .tokenomics, .reward, .roadmap, .note {
             margin: 20px 0;
@@ -58,6 +58,11 @@
             font-weight: bold;
         }
         @media (max-width: 768px) {
+            body {
+                align-items: stretch;
+                height: auto;
+                padding-top: 20px;
+            }
             .content {
                 padding: 20px;
             }
@@ -71,6 +76,9 @@
             }
             .header a {
                 font-size: 14px;
+            }
+            p {
+                line-height: 1.4; /* 모바일 환경에서 줄 간격 조절 */
             }
         }
     </style>
